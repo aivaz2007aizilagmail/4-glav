@@ -1,0 +1,23 @@
+start
+new i number
+new j number
+new product number
+new counter number
+
+set i 1
+
+loop outer (10>i)
+    set j 1
+    loop inner (10>j)
+        set product 0
+        set counter j
+        loop multiply (counter > 0)
+            set product product + i
+            set counter counter - 1
+        end multiply
+        log number product
+        set j j + 1
+    end inner
+    set i i + 1
+end outer
+finish
