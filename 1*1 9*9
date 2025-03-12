@@ -1,23 +1,33 @@
 start
+
 new i number
 new j number
 new product number
 new counter number
-
+new row string  
+new temp string 
 set i 1
 
-loop outer (10>i)
+loop outer (10 > i)
+    set row ""  
     set j 1
-    loop inner (10>j)
+    loop inner (10 > j)
         set product 0
         set counter j
         loop multiply (counter > 0)
             set product product + i
             set counter counter - 1
         end multiply
-        log number product
+        
+      
+        set temp ""  
+        set temp temp + binary(product)
+        set row row + temp + " "  
+        
         set j j + 1
     end inner
+    log string row  
     set i i + 1
 end outer
+
 finish
