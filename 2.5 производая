@@ -1,0 +1,53 @@
+start
+
+new x number
+new h number
+new f_x number
+new f_xh number
+new diff number
+new derivative number
+
+new i number
+new temp number
+new count number
+new xh number
+
+set x 2
+set h 1
+
+set i 0
+set temp 0
+loop square (x > i)
+    set temp temp + x
+    set i i + 1
+end square
+
+
+set f_x temp + 3 + 3 + x + 5
+
+
+set i 0
+set temp 0
+set xh x + h
+loop square2 (xh > i)
+    set temp temp + xh
+    set i i + 1
+end square2
+
+? Вычисляем f(x+h) = (x+h)² + 3(x+h) + 5
+set f_xh temp + 3 + 3 + xh + 5
+
+? Вычисляем разницу f(x+h) - f(x)
+set diff f_xh - f_x
+
+
+set count 0
+loop div (diff > h)
+    set diff diff - h
+    set count count + 1
+end div
+set derivative count
+
+log number derivative
+
+finish
