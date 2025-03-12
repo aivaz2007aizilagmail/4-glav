@@ -1,53 +1,48 @@
 start
 
-new pi number
-new term number
+new numerator number
 new denominator number
-new i number
+new quotient number
+new remainder number
 new temp number
 new count number
-new sign number
-new j number
-new scale number
 
-set scale 10000
+set numerator 22
+set denominator 7
+set temp numerator
+set count 0
 
-set pi 0
-set denominator 1
-set sign 1  ? 1 - прибавляем, 0 - вычитаем
+loop div (temp > denominator)
+    set temp temp - denominator
+    set count count + 1
+end div
+
+set quotient count  
+set remainder temp  
 
 
+
+? 2. Приближаем дробную часть (остаток * 10000 / 7)
+new decimal number
+new i number
+set decimal 0
 set i 0
-loop pi_calc (10 > i)
-    
 
-    set temp scale
-    set count 0
-    loop div (temp > denominator)
-        set temp temp - denominator
-        set count count + 1
-    end div
-
-  
-    if (sign > 0)
-        set term count
-    else
-        set term 0 - count
-    close
-
-    set j 0
-    loop add_four (4 > j)
-        set pi pi + term
-        set j j + 1
-    end add_four
-
-    set sign 0 - sign
-    set denominator denominator + 2
+loop multiply (10000>i)
+    set decimal decimal + remainder
     set i i + 1
-end pi_calc
+end multiply
 
 
-log number pi
+new fraction number
+set fraction 0
+
+loop divide (decimal > denominator)
+    set decimal decimal - denominator
+    set fraction fraction + 1
+end divide
+log string quotient>> "."  >> fraction  
+
 
 
 finish
