@@ -1,0 +1,53 @@
+start
+
+new pi number
+new term number
+new denominator number
+new i number
+new temp number
+new count number
+new sign number
+new j number
+new scale number
+
+set scale 10000
+
+set pi 0
+set denominator 1
+set sign 1  ? 1 - прибавляем, 0 - вычитаем
+
+
+set i 0
+loop pi_calc (10 > i)
+    
+
+    set temp scale
+    set count 0
+    loop div (temp > denominator)
+        set temp temp - denominator
+        set count count + 1
+    end div
+
+  
+    if (sign > 0)
+        set term count
+    else
+        set term 0 - count
+    close
+
+    set j 0
+    loop add_four (4 > j)
+        set pi pi + term
+        set j j + 1
+    end add_four
+
+    set sign 0 - sign
+    set denominator denominator + 2
+    set i i + 1
+end pi_calc
+
+
+log number pi
+
+
+finish
