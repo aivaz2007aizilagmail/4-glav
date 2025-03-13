@@ -1,5 +1,4 @@
 # 4-glav
-# 1-glav
 # 🚀 Добро пожаловать в 4 главу!
 
 [![GitHub Stars](https://img.shields.io/github/stars/aivaz2007aizilagmail/4-glav?style=for-the-badge&logo=github&color=yellow)](https://github.com/aivaz2007aizilagmail/4-glav/stargazers)
