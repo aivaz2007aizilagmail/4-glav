@@ -19,7 +19,7 @@
 
 ### 🛠️ Как поддержать проект?
 1. **Перейдите в репозиторий**:  
-   [github.com/aivaz2007aizilagmail/1-glav(https://github.com/aivaz2007aizilagmail/2-glav)
+   github.com/aivaz2007aizilagmail/1-glav(https://github.com/aivaz2007aizilagmail/2-glav)
 2. **Нажмите «Star»** в правом верхнем углу ⭐
 3. **Подпишитесь** на обновления (кнопка «follow» 👀)
 
